@@ -1,0 +1,48 @@
+html {
+	background: #e1e3e5;
+}
+
+body	{
+	background: #e1e3e5;	
+}
+
+header	{
+	font-size: 2em;
+}
+
+p{
+	padding-left: 1em;
+	color: #9b9b9b;
+	padding-bottom: 1em;
+}
+
+.container	{
+	background: white;
+	margin-top: 10em;
+	width: 27em;
+	height: 25em;
+	background-position: center center;
+	border-radius: 2%;
+	box-shadow: 5px 5px 2px #888888;
+}
+
+.buttonGood	{
+		margin-left: 1em;
+		background: #EBFFD3;
+		font-size: .875em;
+		color: #7FA84E;
+		padding: .6em .8em;
+		border-radius: 10%;
+		border: .16em solid #c3e29e;
+		
+}
+
+.buttonBad	{
+		margin-left: .5em;
+		background: #ffd3d3;
+		font-size: .875em;
+		color: #a84e4e;
+		padding: .6em .9em;
+		border-radius: 10%;
+		border: .16em solid #e29e9e;
+}
