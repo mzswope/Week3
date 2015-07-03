@@ -5,10 +5,6 @@ body {
 	font-family: "Helvetica Neue", Helvetica,Arial, sans-serif;
 }
 
-.menu	{
-	background-color: white;
-}
-
 ul	{
 	list-style-type: none;
     margin: 0;
@@ -23,14 +19,26 @@ li	{
 	font-family: sans-serif;
 }
 
-.leftMenu	{
-	float: left;
-	text-align: left;
+/*Header*/
+
+header	{
 	background-color: white;
+	position: fixed;
+    top: 0;
+	min-width: 100%;
+	margin-right: 10px;
+	height: 46px;
+}
+
+.leftHeaderMenu	{
+	float: left;
+	background-color: white;
+	margin-top: 7px;
+	margin-left: 30px;
 	color: #6A777F;	
 	font-size: 16px;
 	font-weight: bold;
-	margin-top: 7px;
+	text-align: left;
 }
 
 .numericBox 	{
@@ -48,72 +56,21 @@ li	{
 	margin-top: 7px;
 }
 
-.statMenu	{
-	margin-left: 350px;
-	padding-top: 5px;
+#imageMe	{
+	border-radius: 100%;
+	width: 30px;
+	height; 30px;
 
 }
 
-.stats	{
-	display: inline-block;
-	padding-right: 10px;
-	font-size: .9em;
-	color: #6A777F;
-	line-height: .9em;
-}
-
-.numStat	{
-	text-align: center;
-	color: #1BA3A8;
-	font-weight: bold;
-}
-
-.activeStat	{
-	font-weight: bold;   
-}
-
-.activeNumStat	{
-	text-align: center;
-	color: black;
-}
-
-button	{
-	border-radius: 10%;
-}
-
-.tweetButton	{
-	background-color: #1BA3A8;
-	hover: #008A8A;
-	color: white;
-	border-radius: 12%;
-	cursor: pointer;
-  	height: 32px;
-  	padding-left: 14px;
-  	padding-right: 14px;
-  	box-shadow: #1BA3A8;
-  	opacity: 1;
-}
-
-.followButton	{
-	background-color: #fff;
-	color: #55ACEE;
-	border-radius: 15%;
-	padding: 4px;
-	cursor: pointer;
-  	height: 32px;
-  	margin-top: 5px;
-  	border .8px solid #7FCBCB;
-}
-
-
-a	{
-	color: #6A777F;
-}
+/*Background Photo & Ironhack Logo*/
 
 .centerPhoto	{
+	margin-top: 46px;
 	height: 320px;
 	width: 100%;
 	position: relative;
+	z-index: -1;
 }
 
 h2 { 
@@ -130,11 +87,66 @@ h2 {
 	margin-left: 75px;
 }
 
-#imageMe	{
-	border-radius: 100%;
-	width: 30px;
-	height; 30px;
+/*Middle Twitter Data Bar*/
 
+.menu2	{
+	background-color: white;
+	height: 60px;
+}
+
+.statMenu	{
+	margin-left: 350px;
+	padding-top: 5px;
+	height: 60px;
+
+}
+
+.stats	{
+	display: inline-block;
+	padding-right: 25px;
+	font-size: .9em;
+	color: #6A777F;
+	line-height: .9em;
+}
+
+.numStat	{
+	text-align: center;
+	color: #1BA3A8;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.activeStat	{
+	color: black;
+	font-weight: 500;  
+	font-size: 18; 
+}
+
+.activeNumStat	{
+	text-align: center;
+	color: black;
+}
+
+button	{
+	border-radius: 10%;
+}
+
+.btn-primary {
+    background: #1BA3A8;
+    color: white;
+    height: 32px;
+    border: 1px solid #1BA3A8;
+}
+
+.btn-default	{
+	color: #55ACEE;
+	cursor: pointer;
+  	border .8px solid #7FCBCB;
+}
+
+
+a	{
+	color: #6A777F;
 }
 
 .imageTwitterMenu	{
@@ -142,15 +154,26 @@ h2 {
 	margin-bottom: 4px;
 }
 
+/*body of twitter page*/
 
+.content	{
+	margin-top: 0px;
+	  input {
+	    width: 265px;
+	    transition: width 0.2s;
+	    -webkit-appearance: none; /* Autoprefixer doesn't catch this */
+  }
+}
 
-
-
-/*Profile*/
+/*Ironhack Side Bar*/
 
 .container1	{
 	margin-left: 72px;
 	padding-top: 70px; 
+}
+
+.ironhackSideBar	{
+	font-size: 14px;
 }
 
 .ironhack	{
@@ -178,12 +201,26 @@ h2 {
 	position: absolute;
 	margin-top: 10px;
 	background: white;
+	border-radius: 5%;
 }
 
-/*Side Bar*/
+/*Right Side Bar*/
 
 .container3	{
-	position: absolute;
+	float: right;
+	display: inline;
 	margin-top: 10px;
 	background: white;
+	border-radius: 5%;
+	text-align: left;
+	font-size: 14px;
+}
+
+.whoToFollow	{
+	float: left;
+}
+
+.headerListContainer3	{
+	display: inline;
+	color: #009999
 }
