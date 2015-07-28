@@ -1,19 +1,20 @@
 Rails.application.routes.draw do
   
   root "sites#home"
+
+  resources :shelters, only: [:show, :new, :create, :edit, :update]
+  resources :dogs, only: [:index, :show, :new, :create, :edit, :update]
+  
   get "/what-to-expect" => "sites#expect"
 
 
   # default route
-  match ':controller(/:action(/:id))', :via => :get
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
-  match ':controller(/:action(/:id(.:format)))', :via => :get
+  match ':controller(/:action(/:id(.:format)))', :via => [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
