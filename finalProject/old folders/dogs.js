@@ -2,28 +2,17 @@
 
 
 var quoteArray = [
-	"Once you have had a wonderful dog, a life without one, is a life diminished ", 
-	"If there are no dogs in Heaven, then when I die I want to go where they went ", 
-	"The average dog is a nicer person than the average person ",
+	"Once you have had a wonderful dog, a life without one, is a life diminished ~ dean koontz", 
+	"If there are no dogs in Heaven, then when I die I want to go where they went ~ will rogers", 
+	"The average dog is a nicer person than the average person ~ andy rooney",
 	"A dog will teach you unconditional love. If you can have that in your life, things won't be too bad ~ robert wagner",
 	"When an eighty-five pound mammal licks your tears away, then tries to sit on your lap, it's hard to feel sad ~ kristan higgins",
 	"A dog is the only thing on earth that loves you more than you love yourself ~ josh billings", 
 "Dogs are not our whole life, but they make our lives whole ~ roger caras"
 	];
-var quotedArray = ["~ dean koontz", "~ will rogers", "~ andy rooney", "—Robert Wagner", "―Kristan Higgins", "-Josh Billings", "-Roger Caras"]
-
-var fullQuote = [
-	[quoteArray[0] + quotedArray[0]],
-	[quoteArray[1] + " " + quotedArray[1]],
-	[quoteArray[2] + " " + quotedArray[2]],
-]
-
-// $.each(quoteArray, function(quote, quoted){
-	// $("#headerQuote").append(quote + ": " + quoted);
-// })
 
 $(document).ready(function(){
-	$("#headerQuote").text(quoteArray[Math.floor(Math.random()*fullQuote.length)]);
+	$("#headerQuote").text(quoteArray[Math.floor(Math.random()*quoteArray.length)]);
 })
 
 // var dogQuote = document.getElementById("headerQuote");
